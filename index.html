@@ -949,7 +949,7 @@
               </div>
             </div>
             <div class="projet-card" onclick="goTo('projets')" role="button" tabindex="0">
-              <div class="projet-bg-fill" style="background: #B8AB98;"></div>
+              <div class="projet-bg-fill" style="background: #B8AB98 url('images/maisons-laffitte/salle-de-bain-1.jpg') center/cover;"></div>
               <div class="projet-phantom">II</div>
               <div class="projet-overlay"></div>
               <div class="projet-info">
@@ -1131,7 +1131,15 @@
         </div>
 
         <div class="projet-detail">
-          <div class="projet-visuel" style="background: #B8AB98;">II</div>
+          <div class="projet-visuel projet-carousel" data-carousel>
+            <div class="carousel-track">
+              <img class="carousel-slide" src="images/maisons-laffitte/salle-de-bain-1.jpg" alt="Maison d'architecte, Maisons-Laffitte — salle de bain">
+              <img class="carousel-slide" src="images/maisons-laffitte/salle-de-bain-2.jpg" alt="Maison d'architecte, Maisons-Laffitte — salle de bain">
+            </div>
+            <button class="carousel-arrow carousel-prev" aria-label="Photo précédente" type="button">‹</button>
+            <button class="carousel-arrow carousel-next" aria-label="Photo suivante" type="button">›</button>
+            <div class="carousel-dots"></div>
+          </div>
           <div class="projet-desc">
             <div class="projet-tag">Rénovation &amp; agrandissement · En cours</div>
             <h3>Maison d'architecte — Maisons-Laffitte</h3>
