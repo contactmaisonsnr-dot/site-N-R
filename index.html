@@ -976,7 +976,7 @@
               </div>
             </div>
             <div class="projet-card" onclick="goTo('projets')" role="button" tabindex="0" style="grid-column: 1 / -1; aspect-ratio: 8/3;">
-              <div class="projet-bg-fill" style="background: #C2B9A0;"></div>
+              <div class="projet-bg-fill" style="background: #C2B9A0 url('images/normandie/vue-ensemble.jpg') center/cover;"></div>
               <div class="projet-phantom">V</div>
               <div class="projet-overlay"></div>
               <div class="projet-info">
@@ -1190,7 +1190,17 @@
         </div>
 
         <div class="projet-detail">
-          <div class="projet-visuel" style="background: #C2B9A0;">V</div>
+          <div class="projet-visuel projet-carousel" data-carousel>
+            <div class="carousel-track">
+              <img class="carousel-slide" src="images/normandie/vue-ensemble.jpg" alt="Maison avec écuries, Normandie — vue d'ensemble">
+              <img class="carousel-slide" src="images/normandie/piece-de-vie.jpg" alt="Maison avec écuries, Normandie — pièce de vie">
+              <img class="carousel-slide" src="images/normandie/salon-salle-a-manger.jpg" alt="Maison avec écuries, Normandie — salon et salle à manger">
+              <img class="carousel-slide" src="images/normandie/chambre-sdb.jpg" alt="Maison avec écuries, Normandie — chambre et salle de bain">
+            </div>
+            <button class="carousel-arrow carousel-prev" aria-label="Photo précédente" type="button">‹</button>
+            <button class="carousel-arrow carousel-next" aria-label="Photo suivante" type="button">›</button>
+            <div class="carousel-dots"></div>
+          </div>
           <div class="projet-desc">
             <div class="projet-tag">Conseil réagencement · En cours</div>
             <h3>Maison avec écuries — Normandie</h3>
