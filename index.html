@@ -849,7 +849,8 @@
       .nav-item .bar { display: none; }
       .nav-btn { padding: 0.6rem 0.9rem; font-size: 10px; }
       .sidebar-footer { display: none; }
-      .main { height: calc(100vh - 80px); }
+      .main { height: auto; overflow-y: visible; }
+      .site { height: auto; overflow: visible; }
       .hero { padding: 3rem 2rem 3rem; }
       .prestations, .projets-apercu { padding: 2.5rem 2rem; }
       .presta-grid { grid-template-columns: 1fr; }
@@ -1312,7 +1313,11 @@
     document.querySelectorAll('.page').forEach(p => {
       p.classList.toggle('active', p.id === 'page-' + page);
     });
-    document.getElementById('main-content').scrollTo({ top: 0, behavior: 'smooth' });
+    if (window.innerWidth <= 768) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      document.getElementById('main-content').scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   document.querySelectorAll('.nav-btn').forEach(btn => {
