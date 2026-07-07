@@ -967,7 +967,7 @@
               </div>
             </div>
             <div class="projet-card" onclick="goTo('projets')" role="button" tabindex="0">
-              <div class="projet-bg-fill" style="background: #C8BC9C;"></div>
+              <div class="projet-bg-fill" style="background: #C8BC9C url('images/studio-paris/salon.jpg') center/cover;"></div>
               <div class="projet-phantom">III</div>
               <div class="projet-overlay"></div>
               <div class="projet-info">
@@ -1165,7 +1165,15 @@
         </div>
 
         <div class="projet-detail">
-          <div class="projet-visuel" style="background: #C2B5A0;">III</div>
+          <div class="projet-visuel projet-carousel" data-carousel>
+            <div class="carousel-track">
+              <img class="carousel-slide" src="images/studio-paris/salon.jpg" alt="Studio parisien, Paris 15e — salon">
+              <img class="carousel-slide" src="images/studio-paris/salle-a-manger.jpg" alt="Studio parisien, Paris 15e — salle à manger">
+            </div>
+            <button class="carousel-arrow carousel-prev" aria-label="Photo précédente" type="button">‹</button>
+            <button class="carousel-arrow carousel-next" aria-label="Photo suivante" type="button">›</button>
+            <div class="carousel-dots"></div>
+          </div>
           <div class="projet-desc">
             <div class="projet-tag">Conseil décoration</div>
             <h3>Studio parisien, Paris 15e</h3>
