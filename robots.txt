@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://contactmaisonsnr-dot.github.io/site-N-R/sitemap.xml
